@@ -1,0 +1,21 @@
+from fastapi import FastAPI
+from pydantic import BaseModel
+from analyzer import analyze_text
+
+app = FastAPI(
+    title="Rayza Emotional Analysis API",
+    description="ML-powered emotional and sentiment analysis backend",
+    version="1.0.0"
+)
+
+class TextInput(BaseModel):
+    text: str
+
+@app.post("/analyze")
+def analyze(input: TextInput):
+    """
+    Analyze emotional signals from user text.
+    Returns valence, emotion, intensity, severity, confidence.
+    """
+    result = analyze_text(input.text)
+    return result
