@@ -16,8 +16,6 @@ Framework: FastAPI
 
 Machine Learning: Scikit-learn / NLP models
 
-Text Processing: NLTK / spaCy (if used)
-
 API Testing: Postman / Swagger UI
 
 
@@ -25,5 +23,5 @@ API Testing: Postman / Swagger UI
 This API uses the sentiment & emotion analysis logic from:
 
 👉 ML Model Repository:
-https://github.com/Ritam998/Sentiment Chatbot
+https://github.com/Ritam998/Sentiment-Chatbot
 
