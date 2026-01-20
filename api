@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from analyzer import analyze_text
 
 app = FastAPI(
-    title="Rayza Emotional Analysis API",
+    title=" Emotional Analysis API",
     description="ML-powered emotional and sentiment analysis backend",
     version="1.0.0"
 )
